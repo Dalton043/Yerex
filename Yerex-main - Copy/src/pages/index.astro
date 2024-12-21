@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContextAlert from '../components/ContextAlert.astro';
+import Markdown from '../components/Markdown.astro';
+
+const welcomeMessage = `
+Welcome to our online clothing store! Discover the latest trends and shop your favorite outfits.
+`;
+---
+
+<Layout title="Welcome to Our Online Clothing Store">
+    <ContextAlert class="mb-4" />
+    <h1 class="mb-10">Welcome to Our Online Clothing Store</h1>
+    <Markdown content={welcomeMessage} class="text-lg mb-10" />
+    <p class="mb-8">
+        <a href="/products" class="btn btn-lg btn-primary sm:btn-wide">Shop Now</a>
+    </p>
+</Layout>
